@@ -3,7 +3,7 @@ en:
     admin:
       site_settings:
         categories:
-          TODO_plugin_name: "Plugin Name"
+          discourse_move_inactive_topics: "Discourse Move Inactive Topics"
   js:
-    discourse_plugin_name:
+    discourse_move_inactive_topics:
       placeholder: placeholder

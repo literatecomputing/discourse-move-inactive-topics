@@ -1,4 +1,4 @@
-# **Plugin Name** Plugin
+# **Discourse Move Inactive Topics** Plugin
 
 **Plugin Summary**
 
