@@ -1,4 +1,26 @@
-discourse_move_inactive_topics:
-  discourse_move_inactive_topics_enabled:
-    default: false
+plugins:
+  move_inactive_topics_enabled:
+    default: true
+    client: true
+  move_inactive_topics_job_days:
+    default: 180
+    client: true
+  move_inactive_topics_revision_user:
+    type: user
+    default: "system"
+    client: true
+  move_inactive_topics_archive_category:
+    type: category
+    default: 0
+    client: true
+  move_inactive_topics_skip_categories:
+    type: category_list
+    default: ""
+    client: true
+  move_inactive_topics_archive_after_days:
+    default: 180
+    client: true
+  move_inactive_topics_tag_to_skip_archiving:
+    type: tag_list
+    default: ""
     client: true

@@ -1,4 +1,6 @@
 en:
+  move_inactive_topics:
+    archive_reason: "Archived by system after %{days} days of inactivity"
   admin_js:
     admin:
       site_settings:

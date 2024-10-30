@@ -1,1 +1,8 @@
 en:
+  site_settings:
+    discourse_move_inactive_topics_enabled: "Enable the move inactive topics plugin"
+    move_inactive_topics_revision_user: "User to use for revision history"
+    move_inactive_topics_hidden_archive_category: "Category to hide archived topics"
+    move_inactive_topics_skip_categories: "Categories to skip"
+    move_inactive_topics_archive_after_days: "Archive topics after days"
+    move_inactive_topics_tag_to_skip_archiving: "Tags to skip archiving"
