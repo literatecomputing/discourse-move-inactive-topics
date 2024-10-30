@@ -7,8 +7,8 @@ RSpec.describe Jobs::MoveInactiveTopics do
   fab!(:description_post) { create_post(topic: description_topic) }
   fab!(:exempt_category) { Fabricate(:category) }
   fab!(:skip_archive_tag) { Fabricate(:tag, name: "skip-archive") }
-  fab!(:archive_category) { Fabricate(:category, user: user) } 
-  fab!(:topic) { Fabricate(:topic, category: category)}
+  fab!(:archive_category) { Fabricate(:category, user: user) }
+  fab!(:topic) { Fabricate(:topic, category: category) }
   fab!(:topic_post) { Fabricate(:post, topic: topic) }
   fab!(:exempt_topic) { Fabricate(:topic, category: exempt_category) }
   fab!(:exempt_topic_post) { Fabricate(:post, topic: exempt_topic) }
@@ -16,8 +16,8 @@ RSpec.describe Jobs::MoveInactiveTopics do
   fab!(:tagged_topic_post) { Fabricate(:post, topic: tagged_topic) }
 
   before do
-      category.topic_id = description_topic.id
-      setup_site_settings
+    category.topic_id = description_topic.id
+    setup_site_settings
   end
 
   def setup_site_settings
@@ -76,6 +76,5 @@ RSpec.describe Jobs::MoveInactiveTopics do
         expect(topic.category).not_to eq(archive_category)
       end
     end
-
   end
 end
