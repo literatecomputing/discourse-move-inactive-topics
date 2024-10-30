@@ -24,6 +24,7 @@ module Jobs
       archive_category = Category.find(SiteSetting.move_inactive_topics_archive_category.to_i)
       revision_user = User.find_by_username(SiteSetting.move_inactive_topics_revision_user)
       inactive_topics.each do |topic|
+        puts "Got #{inactive_topics.count} inactive topics"
         # skip if is category description
         if topic.id == topic.category.topic_id
           puts "Skipping this topic because it is a category description"
