@@ -13,7 +13,6 @@ module ::DiscourseMoveInactiveTopics
   PLUGIN_NAME = "discourse-move-inactive-topics"
 end
 
-
 after_initialize do
   require_relative "jobs/scheduled/move_inactive_topics.rb"
   require_relative "lib/discourse_move_inactive_topics/engine"
