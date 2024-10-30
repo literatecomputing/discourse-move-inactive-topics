@@ -27,7 +27,7 @@ RSpec.describe Jobs::MoveInactiveTopics do
   end
 
   context "in a category with a topic" do
-    it "should move an inactive topic to the right category" do
+    it "should move an inactive topic to the archive category" do
       category.update_column(:topic_id, description_topic.id)
       expect(topic.category.id).not_to eq(archive_category.id)
       freeze_time 181.days.from_now do
